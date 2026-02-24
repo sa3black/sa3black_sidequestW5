@@ -2,7 +2,7 @@ class Player {
   constructor(x, y, speed) {
     this.x = x;
     this.y = y;
-    this.s = speed ?? 3;
+    this.s = speed ?? 1.2;
   }
 
   updateInput() {
@@ -20,8 +20,8 @@ class Player {
   }
 
   draw() {
-    fill(50, 110, 255);
     noStroke();
-    rect(this.x - 12, this.y - 12, 24, 24, 5);
+    fill(120, 170, 255, 180);
+    ellipse(this.x, this.y, 28, 28);
   }
 }
